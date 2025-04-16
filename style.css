@@ -1,93 +1,93 @@
  * {
-   box-sizing: border-box;
+   box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+} 
+
+input:focus { /* Applies styles when the input field is focused */
+  border: 2px solid #ff9a9e; /* Changes border color to a soft pink when focused */
+  box-shadow: 0 0 5px rgba(255, 154, 158, 0.5); /* Adds a subtle glow effect when input is focused */
 }
 
-input:focus {
-  border: 2px solid #ff9a9e;
-  box-shadow: 0 0 5px rgba(255, 154, 158, 0.5);
+body { /* Styles for the body element */
+  margin: 0; 
+  font-family: Arial, sans-serif; /* Sets the font family for the entire document */
+  background: linear-gradient(100deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background from yellow to orange */
+  height: 100vh; /* Sets the height of the body to fill the viewport */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(100deg, hsl(54, 91%, 57%), #ff6a00);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input { /* Styles for input fields */
+  width: 100%; /* Sets the width of input fields to 100% of their container */
+  max-width: 400px; /* Limits the maximum width of input fields to 400px */
+  padding: 15px; /* Adds padding inside input fields for better spacing */
+  font-size: 14px; 
+  border: 1px transparent; /* Sets a transparent border to avoid layout shifts */
+  outline: none; /* Removes the default outline on focus */
+  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background for input fields */
+  border-bottom: red solid 1px; /* Adds a solid red border at the bottom of input fields */
 }
 
-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  font-size: 14px;
-  border: 1px transparent;
-  outline: none;
-  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00);
-  border-bottom: red solid 1px;
-}
-
-.search-container {
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
+.search-container { /* Styles for the search container */
+  width: 100%; 
+  max-width: 400px; /* Limits the maximum width of the search container to 400px */
+  text-align: center; /* Centers text inside the search container */
 }
 
 .search-container input,
-.search-container .suggestions {
-  width: 100%;
+.search-container .suggestions { /* Styles for input and suggestions inside the search container */
+  width: 100%; 
   font-size: 14px;
-  outline: none;
-  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00);
+  outline: none; 
+  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background for input and suggestions */
 }
 
-.search-container input {
-  width: 100%;
+.search-container input { /* Styles specifically for the input field inside the search container */
+  width: 100%; 
   padding: 15px;
   font-size: 14px;
-  border: 1px transparent;
-  outline: none;
-  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00);
-  border-bottom: red solid 1px;
+  border: 1px transparent; /* Sets a transparent border to avoid layout shifts */
+  outline: none; /* Removes the default outline on focus */
+  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background for input fields */
+  border-bottom: red solid 1px; /* Adds a solid red border at the bottom of input fields */
 }
 
-.search-container .suggestions {
+.search-container .suggestions { /* Styles for the suggestions box inside the search container */
   width: 100%;
 }
 
-ul {
- list-style: none;
- padding: 0;
- margin: 10px 0 0;
- font-size: 14px;
- text-align: left;
- background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00);
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- overflow: hidden;
-  max-height: 200px;
-  overflow-y: auto;
+ul { /* Styles the unordered list */
+ list-style: none; /* Removes the default bullet points */
+ padding: 0; /* Removes default padding */
+ margin: 10px 0 0; /* Adds margin to the top of the list */
+ font-size: 14px; /* Sets the font size for list items */
+ text-align: left; /* Aligns text to the left */
+ background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background for the suggestions box */
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+ overflow: hidden; /* Hides overflow content */
+  max-height: 200px; /* Limits the maximum height of the suggestions box */
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds max height */
 }
 
-ul.has-suggestions {
-  display: block;
+ul.has-suggestions { /* Applies styles when the suggestions box has content */
+  display: block; /* Displays the suggestions box */
 }
 
-ul li {
-  display: block;
-    padding: 10px 15px;
-    font-size: 14px;
-    color: black;
-    cursor: pointer;
-    transition: background 0.3s ease;
+ul li { /* styles for each list item */
+  display: block; /* Displays list items as block elements */
+    padding: 10px 15px; /* Adds padding inside each list item */
+    font-size: 14px; 
+    color: black; /* Sets the text color for list items */
+    cursor: pointer; /* Changes cursor to pointer when hovering over list items */
+    transition: background 0.3s ease; /* Adds a smooth transition effect for background color changes */
 }
 
-ul li:hover {
-    background-color: #ee5801;
-    color: black;
+ul li:hover { /* Applies styles when hovering over list items */
+    background-color: #ee5801; /* Changes background color to a darker shade of orange on hover */
+    color: black; /* Ensures text color remains black on hover */
 }
 
-input {
-  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00);
-  border-bottom: red solid 1px;
+input { /* Styles for input fields */
+  background: linear-gradient(125deg, hsl(54, 91%, 57%), #ff6a00); /* Creates a gradient background for input fields */
+  border-bottom: red solid 1px; /* Adds a solid red border at the bottom of input fields */
 }
